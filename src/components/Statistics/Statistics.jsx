@@ -11,12 +11,11 @@ export const Statistics = ({ stats, title }) => {
 
       <ul className={css.statList}>
         {stats.map(({id, label, percentage, newColor }) => (
-            newColor = getRandomHexColor(),
-            
+                       
           <li key={id}
             className={css.item}
             style={{
-              backgroundColor: newColor,
+              backgroundColor: getRandomHexColor(),
             }}
           >
             <span className={css.label}>{label}</span>
